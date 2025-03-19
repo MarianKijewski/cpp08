@@ -12,8 +12,24 @@ Span::Span(unsigned int N)
 	i = v.begin();
 }
 
+Span::Span(const Span &cpy)
+{
+	this->v = cpy.v;
+	this->i = cpy.i;
+}
+
 Span::~Span()
 {
+}
+
+Span &	Span::operator= (const Span &rhs)
+{
+	if (this != &rhs)
+	{
+		this->v = rhs.v;
+		this->i = rhs.i;
+	}
+	return *this;
 }
 
 void	Span::addNumber(int n)
