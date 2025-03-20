@@ -5,6 +5,7 @@
 # include <numeric>
 # include <vector>
 # include <utility>
+# include <cstdlib>
 # include <iostream>
 
 class Span
